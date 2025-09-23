@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #ffffff;
-    color: #080808;
+    background: #080808;
+    color: #ffffff;
 }
 #header{
     width: 100%;
@@ -41,7 +41,7 @@ nav ul li{ /*nav list styles*/
 
 nav ul li a{ /*nav link styles*/
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.5s ease;
