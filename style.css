@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    color: #080808;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Professional\ Headshot.png); /* path to my headshot*/
+    background-size: 650px auto; /* set width, auto height (maintain aspect ratio) */
+    background-position : right bottom;  /* position the image to the right bottom */
+    background-repeat: no-repeat; /* do not repeat the image */
+    /*transform: scaleX(-1); /*mirrors the image so that the cut off portion is on the right*/
+}
+
+.container{ /*container styles*/
+    padding: 30px 10%;
+}
+
+nav{ /*nav styles*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{ /*logo styles*/
+    width: 250px;
+}
+
+nav ul li{ /*nav list styles*/
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{ /*nav link styles*/
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+nav ul li a::after{ /*nav link hover effect*/
+    content: '';
+    width: 0;  
+    height: 2px;
+    background: #253238;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover::after{ /*nav link hover effect*/
+    width:100%;
+}
+
+.header-text p{ /*header text styles*/
+    width: 50%;
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+.header-text h1{ /*header main text styles*/
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.header-text h1 span{ /*header main text highlight styles*/
+    color: #253238;
+}
