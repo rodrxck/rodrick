@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/caadce313b.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	<div id="header">
@@ -28,19 +29,106 @@
 				<h1><span>Engineer.</span> Designer. <br>Builder of Better <span>Experiences.</span></h1>
 		</div>
 	</div>
-	<!-- ----------about me section ----------- --
+	<!-- ----------about me section ----------- -->
 	<div id="about">
-		<div>class="container">
-			<div> class="row">
-				<div> class="about-col-1">
-					<img src="images/profile.png">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="images/Peace.jpeg">
+					</div>
+					<div class="about-col-2">
+						<h1 class= "sub-title">About Me</h1>
+						<p>Hello! My name is Rodrick T. West Jr, and I am a Mechanical Engineering student at 
+						<span>Prairie View A&M Univesity</span> with a minor in Computer Science. I have a passion
+						 for creating innovative solutions to complex problems, and I am always looking for new
+						challenges to tackle. In addition to my technical skills, I am also a strong communicator and
+						 team player, which allows me to work effectively with others to achieve common goals.</p>
+						<!--- <a href="#" class="hero-btn red-btn">Download Resume</a> <!--- add link later if i want to -->
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('education')">Education</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('projects')">Projects</p>
+							<p class="tab-links" onclick="opentab('skills')">Skills</p>
+						</div>
+						<div class="tab-contents active-tab" id="education">
+							<ul>
+								<li><span>Prairie View A&M</span><br>Bachelor of science in Mechanical Engineering, Minor in Computer Science</li>
+								<li><span>Certificates</span><br>Microsoft AI Cert</li>
+								<li><span>N/A</span><br>Placeholder...</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li><span>Summer 2025 Accenture</span><br>I worked at accenture for the summer</li>
+								<li><span>2023-2024</span><br>Non applicable</li>
+								<li><span>2022-2023</span><br>lil placeholder for rn</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="projects">
+							<ul>
+								<li><span>FPV Mini Arduino Drone</span><br>Made this in robotics club</li>
+								<li><span>PVAMU AI Chatbot</span><br>me and baron's project</li>
+								<li><span>Car flipping</span><br>me and g's project</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="skills">
+							<ul>
+								<li><span>Engineering Technical Skills</span><br>NX10, Fusion360, SolidWorks, AutoCAD Inventor, MATLAB</li>
+								<li><span>Computer Science Technical Skills</span><br>C++, HTML, CSS, JS, </li>
+								<li><span>Other</span><br>PowerPoint, Excel, </li>
+							</ul>
+						</div>
 				</div>
 			</div>
 		</div>
-	</div> -->
-	
-	</body>
+	</div>
+	<!-- ---------- projects ----------- -->
+	 <div id= "services">
+	<div class="container">
+		<h1 class="sub-title">Projects</h1>
+			<div class="services-list">
+				<!-- <img src="images/Design.png">--- -->
+				<!--<i class="fa-solid fa-comment-nodes"></i>--> 
+				<h2>PVAMU AI Chatbot</h2>
+				<p>I create user-friendly designs that are visually appealing and easy to navigate.</p>
+				 <a href="#">Learn More</a>
+			</div>
+			<div class="services-list">
+				<!-- <img src="images/Design.png"> -->
+				<h2>FPV Mini Aurdino Drone</h2>
+				<p>I write clean, efficient code that is easy to maintain and scale.</p>
+				 <a href="#">Learn More</a>
+			</div>
+			<div class="services-list">
+				<!-- <img src="images/Design.png"> -->
+				<h2>Car Flipping</h2>
+				<p>I provide expert advice and guidance to help businesses achieve their goals.</p>
+				<a href="#">Learn More</a>
+			</div>
+	</div>
+</div>
 
+	<script>
+
+		var	tablinks = document.getElementsByClassName("tab-links");
+		var	tabcontents = document.getElementsByClassName("tab-contents");
+		function opentab(tabname){
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+
+		}
+
+
+	</script>
+
+</body>
 </html>
 
 
