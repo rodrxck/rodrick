@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/Professional\ Headshot.png); /* path to my headshot*/
+    background-image: url(images/professional-headshot.png); /* path to my headshot*/
     background-size: 750px auto; /* set width, auto height (maintain aspect ratio) */
     background-position : right bottom;  /* position the image to the right bottom */
     background-repeat: no-repeat; /* do not repeat the image */
